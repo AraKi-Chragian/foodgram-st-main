@@ -1,0 +1,98 @@
+[
+  {
+    "author_email": "1@example.com",
+    "name": "Жюльен с грибами",
+    "text": "Нежный сливочный жюльен с грибами и расплавленным сыром, приготовленный в духовке.",
+    "cooking_time": 25,
+    "image": "recipes/julienne.png",
+    "ingredients": [
+      {
+        "name": "шампиньоны",
+        "measurement_unit": "г",
+        "amount": 200
+      },
+      {
+        "name": "сливки",
+        "measurement_unit": "мл",
+        "amount": 100
+      },
+      {
+        "name": "сыр",
+        "measurement_unit": "г",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "author_email": "2@example.com",
+    "name": "Маргарита",
+    "text": "Популярная пицца с моцареллой, томатами и базиликом на тонком тесте.",
+    "cooking_time": 20,
+    "image": "recipes/pizza.png",
+    "ingredients": [
+      {
+        "name": "помидоры",
+        "measurement_unit": "г",
+        "amount": 150
+      },
+      {
+        "name": "моцарелла",
+        "measurement_unit": "г",
+        "amount": 100
+      },
+      {
+        "name": "базилик свежий",
+        "measurement_unit": "г",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "author_email": "3@example.com",
+    "name": "Суп овощной",
+    "text": "Полезное и лёгкое первое блюдо на основе сезонных овощей.",
+    "cooking_time": 30,
+    "image": "recipes/soup.png",
+    "ingredients": [
+      {
+        "name": "картофель",
+        "measurement_unit": "г",
+        "amount": 200
+      },
+      {
+        "name": "морковь",
+        "measurement_unit": "г",
+        "amount": 100
+      },
+      {
+        "name": "лук зелёный",
+        "measurement_unit": "г",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "author_email": "4@example.com",
+    "name": "Суши с рыбой",
+    "text": "Минималистичные суши из варёного риса, нори и лосося.",
+    "cooking_time": 35,
+    "image": "recipes/sushi.png",
+    "ingredients": [
+      {
+        "name": "рис",
+        "measurement_unit": "г",
+        "amount": 200
+      },
+      {
+        "name": "лосось",
+        "measurement_unit": "г",
+        "amount": 100
+      },
+      {
+        "name": "нори",
+        "measurement_unit": "г",
+        "amount": 5
+      }
+    ]
+  }
+]

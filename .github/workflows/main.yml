@@ -1,0 +1,39 @@
+name: Foodgram Tests&PEP8
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  postman-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      docker:
+        image: docker:latest
+        options: --privileged
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Compose
+        run: |
+          docker compose -f infra/docker-compose.yml up -d --build
+
+      - name: Wait for services
+        run: |
+          echo "Waiting for services to be up..."
+          sleep 30
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Postman tests
+        run: |
+          newman run postman_collection/foodgram.postman_collection.json \
+            --delay-request 500 \
+            --insecure \
+            --timeout-request 30000
